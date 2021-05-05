@@ -24,33 +24,33 @@
 <meta name="keywords" content="UE4">
 <meta property="og:type" content="article">
 <meta property="og:title" content="UE4-多人游戏框架理解">
-<meta property="og:url" content="http://stonelzp.github.io/ue4-multiplay-framework/index.html">
+<meta property="og:url" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/index.html">
 <meta property="og:site_name" content="StoneのBLOG">
 <meta property="og:description" content="UE4中有对多人游戏模式的支持，本篇会记载一些与之相关的比较繁杂的知识点，一上来还是不可能就对所有的框架就能进行归纳总结的吧。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/Role_Replication.jpg">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/NetConnection.PNG">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/FNetworkGUID.PNG">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/ReliableRPCs1.png">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/ReliableRPC2.png">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/SinglePlay.png">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/MultiPlay-Server.png">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/MultiPlay-Client1.png">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/MultiPlay-Client2.png">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/ServerWithlisten.PNG">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/server1.PNG">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/client3.PNG">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/ClientTraveling.PNG">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/client1.PNG">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/client2.PNG">
-<meta property="og:image" content="http://stonelzp.github.io/ue4-multiplay-framework/Server-Client-Traveling.PNG">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/Role_Replication.jpg">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/NetConnection.PNG">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/FNetworkGUID.PNG">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/ReliableRPCs1.png">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/ReliableRPC2.png">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/SinglePlay.png">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/MultiPlay-Server.png">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/MultiPlay-Client1.png">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/MultiPlay-Client2.png">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/ServerWithlisten.PNG">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/server1.PNG">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/client3.PNG">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/ClientTraveling.PNG">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/client1.PNG">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/client2.PNG">
+<meta property="og:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/Server-Client-Traveling.PNG">
 <meta property="og:updated_time" content="2021-02-18T16:09:45.341Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="UE4-多人游戏框架理解">
 <meta name="twitter:description" content="UE4中有对多人游戏模式的支持，本篇会记载一些与之相关的比较繁杂的知识点，一上来还是不可能就对所有的框架就能进行归纳总结的吧。">
-<meta name="twitter:image" content="http://stonelzp.github.io/ue4-multiplay-framework/Role_Replication.jpg">
+<meta name="twitter:image" content="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/Role_Replication.jpg">
 
-<link rel="canonical" href="http://stonelzp.github.io/ue4-multiplay-framework/">
+<link rel="canonical" href="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/">
 
 
 <script id="page-configurations">
@@ -169,7 +169,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://stonelzp.github.io/ue4-multiplay-framework/">
+    <link itemprop="mainEntityOfPage" href="http://stonelzp.github.io/stonelzp.github.io/ue4-multiplay-framework/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/stonelzp.github.io/images/avatar.gif">
